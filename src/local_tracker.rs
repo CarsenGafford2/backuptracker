@@ -25,11 +25,11 @@ impl LocalTracker {
 
     fn get_json_path() -> std::path::PathBuf {
         let home_dir: std::path::PathBuf = dirs::home_dir().expect("Could not find home directory");
-        let app_dir: std::path::PathBuf = home_dir.join(".backup_tracker");
+        let app_dir: std::path::PathBuf = home_dir.join(".safekp");
         if !app_dir.exists() {
             std::fs::create_dir_all(&app_dir).expect("Failed to create application directory");
         }
-        app_dir.join("backup_tracker_data.json")
+        app_dir.join("safekp_data.json")
     }
 
     pub fn track_folder(&self, folder_path: &str) {

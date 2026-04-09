@@ -11,7 +11,7 @@ fn main() {
     }
 
     if args[0] == "-v" || args[0] == "-version" && args.len() == 1 {
-        print!("Backup Tracker version 0.10.3");
+        print!("Safekp version 0.10.3");
     } else if args[0] == "-track" || args[0] == "-t" && args.len() == 3 {
         let backup_engine = backup_engine::BackupEngine::new();
         let tracker = local_tracker::LocalTracker::new();
@@ -35,7 +35,7 @@ fn main() {
             println!("Backup created at: {backup_location}");
         }
     } else if args[0] == "-help" || args[0] == "-h" && args.len() == 1 {
-        println!("Usage: backup-tracker [OPTIONS]");
+        println!("Usage: safekp [OPTIONS]");
         println!("Options:");
         println!("  -v, -version     Show version information");
         println!("  -t, -track       Track a file or folder and create a backup");

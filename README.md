@@ -1,6 +1,6 @@
-# Backup Tracker
+# Safekp
 
-Backup Tracker is a small command-line app made in Rust. It helps you make backups of files and folders, and it can also keep track of them so they can be updated later.
+Safekp is a small command-line app made in Rust. It helps you make backups of files and folders, and it can also keep track of them so they can be updated later.
 
 ## What it does
 
@@ -11,18 +11,18 @@ Backup Tracker is a small command-line app made in Rust. It helps you make backu
 
 ## How to use it
 
-The easiest way to use Backup Tracker is to download the `.exe` file from the Releases section.
+The easiest way to use Safekp is to download the `.exe` file from the Releases section.
 
 After you download it:
 
 1. Put the `.exe` in a folder.
 2. Add that folder to your `PATH`.
-3. Open a terminal and run `backuptracker` with the option you want.
+3. Open a terminal and run `safekp` with the option you want.
 
 Example:
 
 ```bash
-backuptracker -h
+safekp -h
 ```
 
 ## Requirements
@@ -106,7 +106,7 @@ cargo run -- -u
 The app saves its tracking data in your home folder:
 
 ```text
-.backup_tracker/backup_tracker_data.json
+.safekp/safekp_data.json
 ```
 
 ## Notes
